@@ -1,0 +1,64 @@
+/* Reset some basic elements */
+body, h1, canvas, table {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.chart-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table.dataTable {
+    width: 100% !important;
+    margin-top: 20px !important;
+}
+
+table.dataTable th, table.dataTable td {
+    padding: 10px;
+    text-align: left;
+}

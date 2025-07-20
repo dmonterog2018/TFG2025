@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Bar Chart Representation from JSON</h1>
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+            <h1>Interactive Table</h1>
+            <div class="table-container">
+                <table id="dataTable" class="display">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Start Line</th>
+                            <th>End Line</th>
+                            <th>Displacement</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Data will be populated here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
